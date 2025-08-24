@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(112, 110, 110);
+    color: white;
+padding: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+div{
+    text-align: center;
+background-color: rgb(0, 0, 0);
+border-radius: 16px;
+padding: 20px;
+width: 100%;
+max-width: 400px;
+
+}
+
+input{
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+p{
+font-size: 20px;
+}
+
+#kgs1{
+ font-weight: bold;
+    font-size: 2rem;
+}
+
+#numerokgs{
+font-size: 1.5rem;
+}
+
+label{
+    font-size: 30px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Calculadora lbs-kgs</title>
+<link rel="stylesheet" href="style.css">   
+</head>
+
+   <body>
+    
+    <div>
+    <h1>Converta Libras para Quilogramas</h1>
+    <p>Digite um valor para conversão:</p>
+    <label for="input" >Libras</label>
+    <input type="number" name="LBS" id="input"
+    min="0" placeholder="Libras" oninput="mudar()" onchange="mudar()">
+ <p id="kgs1">Kg:<span id="numerokgs"></span></p>
+   </div>
+
+<script>
+
+function mudar(){
+    let libras = parseFloat(document.getElementById("input").value);
+
+if (isNaN(libras)) {
+    document.getElementById("input").value = NaN
+}
+
+let kgs = (libras * 0.453592);
+document.getElementById("numerokgs").innerHTML = kgs.toFixed(2);
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
